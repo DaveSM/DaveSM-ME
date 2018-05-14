@@ -10,70 +10,67 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DaveSMVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DaveSM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DaveSMVC" customModule="DaveSM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BcW-wE-ZhN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BcW-wE-ZhN">
                                 <rect key="frame" x="0.0" y="82" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="a6G-c7-BOI">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubscriptionCell" focusStyle="custom" rowHeight="200" id="a6G-c7-BOI" customClass="SubscriptionCell" customModule="DaveSM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a6G-c7-BOI" id="RXs-im-1g6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a6G-c7-BOI" id="RXs-im-1g6" customClass="SubscriptionCell" customModule="DaveSM" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MsA-Ej-16t">
-                                                    <rect key="frame" x="15" y="9" width="133" height="81"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spotify fam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gul-Tz-CcC">
+                                                    <rect key="frame" x="15" y="140" width="345" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$149.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKX-cj-pHh">
+                                                    <rect key="frame" x="285" y="35" width="64" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spotify" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWp-jL-nVH">
+                                                    <rect key="frame" x="118" y="35" width="55" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Netflix" translatesAutoresizingMaskIntoConstraints="NO" id="RQP-0Q-tgY">
+                                                    <rect key="frame" x="15" y="53" width="95" height="95"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subs Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWp-jL-nVH">
-                                                    <rect key="frame" x="156" y="9" width="88" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subs Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gul-Tz-CcC">
-                                                    <rect key="frame" x="156" y="38" width="82" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKX-cj-pHh">
-                                                    <rect key="frame" x="309" y="9" width="51" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-bm-64G">
-                                                    <rect key="frame" x="309" y="39" width="52" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 week" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-bm-64G">
+                                                    <rect key="frame" x="297" y="140" width="52" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="NKX-cj-pHh" firstAttribute="leading" secondItem="jWp-jL-nVH" secondAttribute="trailing" constant="65" id="C3e-Fe-Bkk"/>
-                                                <constraint firstItem="Oaa-bm-64G" firstAttribute="leading" secondItem="gul-Tz-CcC" secondAttribute="trailing" constant="71" id="En2-I6-QWW"/>
-                                                <constraint firstAttribute="trailing" secondItem="NKX-cj-pHh" secondAttribute="trailing" constant="15" id="Fa4-BK-hXU"/>
-                                                <constraint firstItem="gul-Tz-CcC" firstAttribute="leading" secondItem="MsA-Ej-16t" secondAttribute="trailing" constant="8" id="IBV-J3-ALX"/>
-                                                <constraint firstItem="NKX-cj-pHh" firstAttribute="top" secondItem="RXs-im-1g6" secondAttribute="top" constant="9" id="IHQ-gs-5kF"/>
-                                                <constraint firstItem="MsA-Ej-16t" firstAttribute="top" secondItem="RXs-im-1g6" secondAttribute="top" constant="9" id="JO7-82-fCB"/>
-                                                <constraint firstAttribute="bottom" secondItem="Oaa-bm-64G" secondAttribute="bottom" constant="39.5" id="Wza-4T-1hk"/>
-                                                <constraint firstItem="gul-Tz-CcC" firstAttribute="top" secondItem="jWp-jL-nVH" secondAttribute="bottom" constant="8" id="c5g-fi-1Pi"/>
-                                                <constraint firstItem="jWp-jL-nVH" firstAttribute="leading" secondItem="MsA-Ej-16t" secondAttribute="trailing" constant="8" id="iqk-5c-dOG"/>
-                                                <constraint firstAttribute="trailing" secondItem="Oaa-bm-64G" secondAttribute="trailing" constant="14" id="isV-6c-Q6K"/>
-                                                <constraint firstItem="gul-Tz-CcC" firstAttribute="top" secondItem="jWp-jL-nVH" secondAttribute="bottom" constant="8" id="j2v-I2-aLB"/>
-                                                <constraint firstItem="MsA-Ej-16t" firstAttribute="leading" secondItem="RXs-im-1g6" secondAttribute="leading" constant="15" id="nvV-OK-ehh"/>
-                                                <constraint firstItem="jWp-jL-nVH" firstAttribute="top" secondItem="RXs-im-1g6" secondAttribute="top" constant="9" id="qeC-pe-ste"/>
-                                                <constraint firstAttribute="bottom" secondItem="MsA-Ej-16t" secondAttribute="bottom" constant="9.5" id="t4d-Nz-Tfx"/>
-                                            </constraints>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subsBilling" destination="Oaa-bm-64G" id="OEa-LF-Hur"/>
+                                            <outlet property="subsCost" destination="NKX-cj-pHh" id="dMd-zi-Fpb"/>
+                                            <outlet property="subsDesc" destination="gul-Tz-CcC" id="zGY-bl-Zw2"/>
+                                            <outlet property="subsImage" destination="RQP-0Q-tgY" id="DwV-Vb-Mew"/>
+                                            <outlet property="subsName" destination="jWp-jL-nVH" id="IwP-ws-vTl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,6 +78,9 @@
                                 <rect key="frame" x="321" y="22" width="30" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="btnAddSubs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ov-Ep-exY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14U-1U-HeP">
                                 <rect key="frame" x="16" y="632" width="335" height="21"/>
@@ -105,10 +105,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="subsTable" destination="BcW-wE-ZhN" id="St0-g6-fgl"/>
+                        <outlet property="totalMonthly" destination="14U-1U-HeP" id="Gvg-zP-lKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354.39999999999998" y="66.11694152923539"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Netflix" width="400" height="300"/>
+    </resources>
 </document>
